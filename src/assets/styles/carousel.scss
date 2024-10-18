@@ -1,0 +1,69 @@
+
+.hero-section{
+  margin-bottom: 5rem;
+  button{
+    background-image: linear-gradient(to left, #FFB81D, #ff6B00);
+    background-color: #ff6B00;
+    border: 0;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+  }
+  img{
+    height: 530px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .cover-images-overlay{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    height: 100%;
+  }
+  @keyframes slideup {
+    from {
+      transform: translateY(-300%);
+      opacity: 0.25;
+    }
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  .slideup-animation {
+    animation: slideup 1200ms;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 28px;
+
+  }
+  .carousel-caption{
+    top: 13%;
+  }
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0.25;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  .slidein-animation {
+    animation: slide-in 1000ms;
+    animation-delay: 500ms;
+    margin-bottom: 28px;
+  }
+}

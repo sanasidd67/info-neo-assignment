@@ -1,0 +1,82 @@
+.card-container{
+    width: 312px !important;
+    height: 545px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+    margin-bottom: 33px;
+    border: 1px solid #f2f2f2;
+    &:hover{
+        box-shadow: 0 0 45px gray;
+    }
+    .img-section{
+        height: 300px;
+        width: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .txt1{
+        margin: auto;
+        text-align: center;
+        font-size: 17px;
+    }
+    .content{
+       
+    padding: 14px;
+    }
+    .label-tag{
+        width: 76px;
+        height: 31px;
+        background-image: linear-gradient(to left, #FFB81D, #ff6B00);
+    background-color: #ff6B00;
+        color: white;
+        position: relative;
+        top: -31px;
+        font-size: 17px;
+    padding: 3px 17px;
+    }
+    .txt4{
+        font-size: 21px;
+        margin-bottom: 0;
+    }
+    .txt5{
+        margin-bottom: 5px;
+        color: #ff6B00;
+        font-size: 23px;
+    }
+
+}
+
+.slick-card{
+    .slick-dots li.slick-active button:before {
+        opacity: .75;
+        color: #ff6B00;
+        font-size: 12px;
+        width: 18px;
+        height: 18px;
+        border-radius: 100px;
+    background-color: #ffe3cf;
+    }
+    .slick-dots li button:before{
+        color: #ff9040;
+    }
+    .slick-prev:before{
+        color: #ff6B00;
+        font-size: 26px;
+    }
+    .slick-slider{
+        padding: 24px;
+        padding-bottom: 10px;
+    }
+     .slick-next:before{
+        color: #ff6B00;
+        font-size: 26px;
+     }
+     .slick-next {
+        right: 6px;
+     }
+}

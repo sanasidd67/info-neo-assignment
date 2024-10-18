@@ -1,0 +1,123 @@
+.topbar {
+  background:  #00b78447;
+  padding: 20px;
+  padding: 6px;
+  a {
+    text-decoration: none;
+    font-weight: 500;
+  }
+}
+
+.navbar {
+    padding: 0 23px!important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+  .logo {
+    width: 79px;
+    transition: 0.5s;
+    margin-right: 4%;
+  }
+   .navbar-collapse {
+    justify-content: space-between;
+  }
+  .navbar-nav {
+    .nav-link {
+      font-family: "Roboto", sans-serif;
+      position: relative;
+      margin-right: 25px;
+      padding: 14px 0;
+      color: black;
+      font-size: 16px;
+      font-weight: 400;
+      outline: none;
+      transition: 0.5s;
+    }
+  }
+  .search{
+    img{
+        width: 17px;
+    }
+    .form-control{
+        background-color: #e7e7e7 !important;
+    }
+  }
+}
+
+
+.navbar .dropdown-toggle::after {
+  border: none;
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.dropdown .dropdown-menu a:hover {
+  background: var(--bs-primary);
+  color: var(--bs-white);
+}
+
+.navbar .nav-item:hover .dropdown-menu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  background: var(--bs-light);
+  transition: 0.5s;
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: block;
+    visibility: hidden;
+    top: 100%;
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+    border: 0;
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .navbar-light {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    z-index: 999;
+}
+
+  .navbar-light .navbar-nav .nav-link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 1px;
+    left: 50%;
+    background: #00b784;
+    transition: 0.5s;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover::before,
+  .navbar-light .navbar-nav .nav-link.active::before {
+    width: calc(100% - 2px);
+    left: 1px;
+  }
+
+  .navbar-light .navbar-nav .nav-link::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: 1px;
+    left: 50%;
+    background: #00b784;
+    transition: 0.5s;
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover::after,
+  .navbar-light .navbar-nav .nav-link.active::after {
+    width: 2px;
+    height: 12px;
+  }
+}
+
